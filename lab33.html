@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+        }
+        .header {
+            padding: 50px;
+            text-align: center;
+            background: #dbdcde;
+            color: rgb(10, 10, 10);
+        }
+        .navbar {
+            display: flex;
+            background-color: #dc8d8d;
+        }
+        .navbar a {
+            color: aliceblue;
+            padding: 15px 15px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: blue;
+            color: rgb(241, 5, 5);
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .side {
+            flex: 25%;
+            background-color: rgb(219, 212, 203);
+            padding: 20px;
+        }
+        .main {
+            flex: 75%;
+            background-color: azure;
+            padding: 20px;
+        }
+        .fimg {
+            background-color: #c9c5c5;
+            width: 100%;
+            padding: 20px;
+        }
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #dc8d8d;
+        }
+        @media screen and (max-width: 800px) {
+            .row, .navbar {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div style="background-color: blanchedalmond; padding: 10px;">
+        <h3 style="text-align: center;">Báo dân trí</h3>
+    </div>
+    <!-- Header -->
+    <div class="header">
+        <h1>Website QinYu</h1>
+        <p>Trang tin tức số 1 vn</p>
+    </div>
+    <!-- Menu -->
+    <div class="navbar">
+        <a href="#">Trang chủ</a>
+        <a href="#">Liên hệ</a>
+        <a href="#">Tin tức</a>
+        <a href="#">Kinh Doanh</a>
+        <a href="#">Sức Khỏe</a>
+    </div>
+    <!-- Content -->
+    <div class="row">
+        <div class="side">
+            <h2>Gioi thieu</h2>
+            <h3>Trang 1</h3>
+            <p>Mỹ nữ bị tẩy chay vì "đóng phim là phụ làm tiểu tam là chính",.. </p>
+            <div class="fimg" style="height: 60px;">Image</div><br/>
+            <div class="fimg" style="height: 60px;">Image</div><br/>
+            <div class="fimg" style="height: 60px;">Image</div><br/>
+            <div class="fimg" style="height: 60px;">Image</div><br/>
+        </div>
+        <!-- main -->
+        <div class="main">
+            <h2>Tin tức xứ Trung</h2>
+            <h5>Tin hot Cbiz</h5>
+            <div class="fimg" style="height: 200px;">Image</div>
+            <p>Trạng thái đối lập của Triệu Lệ Dĩnh Triệu Lộ Tư khi dự sự kiện,.. </p>
+            <br/>
+            <h2>Tin tức Việt Nam</h2>
+            <h5>Tin hot Vbiz</h5>
+            <div class="fimg" style="height: 200px;">Image</div>
+            <p>Nữ phụ phim Việt giờ vàng bị chê diễn quá dở, thẩm mỹ quá đà nên mặt đơ cứng,.. </p>
+            <br/>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <h2>Thông tin bản quyền trực thuộc đài THQY</h2>
+    </div>
+</body>
+</html>
